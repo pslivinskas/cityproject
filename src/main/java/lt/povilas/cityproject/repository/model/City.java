@@ -15,10 +15,14 @@ import lombok.ToString;
 @Setter
 @NoArgsConstructor
 @ToString
+
 public class City {
+
     @Id
+    @Column(name = "id")
+    private int id;
     @Column(name = "name")
-    private String name;
+    private String cityName;
     @Column(name = "countrycode")
     private String countryCode;
     @Column(name = "district")
